@@ -20,6 +20,7 @@ bash
 git clone https://github.com/KemuellKlinger/App-Janela.git
 
 3. **Uso Básico:**
+   
 Tem anexado o arquivo exemplo.py
 
 ## **Contribuição:**
