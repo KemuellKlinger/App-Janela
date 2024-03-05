@@ -26,9 +26,13 @@ Tem anexado o arquivo exemplo.py
 ## **Contribuição:**
 Contribuições são bem-vindas! Sinta-se à vontade para abrir problemas (issues) ou enviar pull requests para melhorar o projeto.
 
-Licença:
+4. **Licença:**
+
 Este projeto é licenciado sob a MIT License.
 
-Contato
-Autor: Kemuell Klinger
-Email: kemuellklinger411@gmail.com
+## **Contato**
+
+**Autor:** Kemuell Klinger
+
+
+**Email:** kemuellklinger411@gmail.com
