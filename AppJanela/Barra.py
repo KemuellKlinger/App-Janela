@@ -1,6 +1,6 @@
 from tkinter import * 
 from tkinter import ttk
-import time
+
 
 class Barra:
     def __init__(self, master):

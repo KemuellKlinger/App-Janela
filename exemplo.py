@@ -1,7 +1,7 @@
 from AppJanela.Barra import *
 from AppJanela.Janela import *
 from AppJanela.Buttones import *
-
+import time
 
 novaJanela = Janela("Teste", 300, 350, "gray")
 
@@ -11,14 +11,15 @@ barrinha = Barra(novaJanela.root)
 
 # Função para testar a barra de progresso
 def iniciarProgresso():
-    for i in range(101):  # Vai de 0 a 100
+    for i in range(101):  
         barrinha.atualizarBarra(i)
         novaJanela.root.update_idletasks()  # Atualiza a interface para mostrar o progresso
-        time.sleep(0.05)  # Pausa para simular o tempo de processamento
+        time.sleep(0.05)  
 
 # Botão para iniciar o progresso
 botaoProgresso = Buttones()
 botaoProgresso.addBotao("Iniciar Progresso", iniciarProgresso)
+
 #----------------Entrada-------------------
 
 txt = novaJanela.addEntrada("Teste 1")
