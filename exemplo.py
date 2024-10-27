@@ -1,10 +1,24 @@
-from Janela.Janela import *
-from extras.Barra import *
+from AppJanela.Barra import *
+from AppJanela.Janela import *
+from AppJanela.Buttones import *
 
-#-----------Instaciando a classe-----------
+
 novaJanela = Janela("Teste", 300, 350, "gray")
 
+#----------------Barra de carregamento-------------------
+# Criar uma instância da barra de progresso
+barrinha = Barra(novaJanela.root)
 
+# Função para testar a barra de progresso
+def iniciarProgresso():
+    for i in range(101):  # Vai de 0 a 100
+        barrinha.atualizarBarra(i)
+        novaJanela.root.update_idletasks()  # Atualiza a interface para mostrar o progresso
+        time.sleep(0.05)  # Pausa para simular o tempo de processamento
+
+# Botão para iniciar o progresso
+botaoProgresso = Buttones()
+botaoProgresso.addBotao("Iniciar Progresso", iniciarProgresso)
 #----------------Entrada-------------------
 
 txt = novaJanela.addEntrada("Teste 1")
@@ -13,7 +27,6 @@ def imprimir():
     if txt.get():
         novaJanela.msgAviso(txt.get())
     else:
-        barrinha = Barra(novaJanela.root)
         novaJanela.msgAviso("Digite algo no campo")
         
 botaoAlerta = Buttones()

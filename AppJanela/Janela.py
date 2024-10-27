@@ -1,6 +1,7 @@
 from tkinter import *
 from tkinter import messagebox, filedialog
-from AppJanela.Buttones import Buttones
+from AppJanela import Buttones
+
 
 class Janela:
     def __init__(self, titulo, largura, altura, corPadrao=None):
@@ -63,7 +64,6 @@ class Janela:
         # Campo de entrada para exibir o caminho
         self.caminho_entrada = Entry(self.root, width=largura)
         
-    
     def selecionar_caminho(self, esp=None):
         # Abre o diálogo para selecionar o diretório
         caminho = filedialog.askdirectory()
